@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-ai-monitor-demo"
+version = "0.1.0"
+description = "Offline, sanitized demo of a Telegram-to-WeChat monitoring pipeline"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools.package-data]
+telegram_ai_monitor_demo = ["fixtures/*.json", "fixtures/*.md"]

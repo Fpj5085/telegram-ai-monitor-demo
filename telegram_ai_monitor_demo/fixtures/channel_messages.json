@@ -1,0 +1,27 @@
+[
+  {
+    "message_id": "sim-msg-001",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python workflow toolkit 2.0 released; public demo available."
+  },
+  {
+    "message_id": "sim-msg-002",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python package 3.1 is now available for local testing."
+  },
+  {
+    "message_id": "sim-msg-003",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] A small Python bot framework released its offline example."
+  },
+  {
+    "message_id": "sim-msg-004",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Sponsored promotion: Python course released with a discount."
+  },
+  {
+    "message_id": "sim-msg-005",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Weekend weather discussion and community chat."
+  }
+]
