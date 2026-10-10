@@ -1,0 +1,576 @@
+[
+  {
+    "message_id": "sim-msg-001",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python task queue library 4.0 released with a stable public demo.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-002",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] A new Python typing helper is now available for local testing.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-003",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python data validation toolkit 2.3 released; changelog in repo.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-004",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Lightweight Python scheduler released with offline examples.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-005",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python HTTP mock library 1.2 is available on the package index.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-006",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python CLI framework 0.9 released with documentation updates.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-007",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] The Python retry helper you asked about is now available.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-008",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python config loader 3.1 released; backwards compatible.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-009",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] A Python log analyzer was released as an open source demo.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-010",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python test fixture generator is available for evaluation.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-011",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python SQLite wrapper 2.0 released with WAL support.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-012",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] New Python circuit breaker library released this week.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-013",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python rate limiter 1.1 is available; benchmarks included.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-014",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] A Python schema validator was released with strict mode.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-015",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python queue inspector tool available for local install.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-016",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python course released with a limited discount code this weekend.",
+    "true_relevant": false,
+    "intent": "promo outside blocklist"
+  },
+  {
+    "message_id": "sim-msg-017",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Grab the Python bootstrapping kit — limited offer ends today.",
+    "true_relevant": false,
+    "intent": "promo outside blocklist"
+  },
+  {
+    "message_id": "sim-msg-018",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python mentorship program launched; coupon code inside.",
+    "true_relevant": false,
+    "intent": "promo outside blocklist"
+  },
+  {
+    "message_id": "sim-msg-019",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Exclusive deal: Python tooling bundle at half price for subscribers.",
+    "true_relevant": false,
+    "intent": "promo outside blocklist"
+  },
+  {
+    "message_id": "sim-msg-020",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python ebook giveaway — click the affiliate link before it expires.",
+    "true_relevant": false,
+    "intent": "promo outside blocklist"
+  },
+  {
+    "message_id": "sim-msg-021",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Last chance to buy the Python automation bundle at 80% off.",
+    "true_relevant": false,
+    "intent": "promo outside blocklist"
+  },
+  {
+    "message_id": "sim-msg-022",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Sponsored placement: Python hosting provider recommends this stack.",
+    "true_relevant": false,
+    "intent": "promo in blocklist"
+  },
+  {
+    "message_id": "sim-msg-023",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] This advertisement covers a Python certification program.",
+    "true_relevant": false,
+    "intent": "promo in blocklist"
+  },
+  {
+    "message_id": "sim-msg-024",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Promotion alert: Python template marketplace flash sale.",
+    "true_relevant": false,
+    "intent": "promo in blocklist"
+  },
+  {
+    "message_id": "sim-msg-025",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] A paid Python certification course released its enrollment page.",
+    "true_relevant": false,
+    "intent": "rule false positive"
+  },
+  {
+    "message_id": "sim-msg-026",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] The marketing team released a Python-themed merchandise line.",
+    "true_relevant": false,
+    "intent": "rule false positive"
+  },
+  {
+    "message_id": "sim-msg-027",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Someone released a Python raffle bot to farm giveaway entries.",
+    "true_relevant": false,
+    "intent": "rule false positive"
+  },
+  {
+    "message_id": "sim-msg-028",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] A retail store promotion mentions Python socks are available.",
+    "true_relevant": false,
+    "intent": "rule false positive"
+  },
+  {
+    "message_id": "sim-msg-029",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Weekend weather discussion and general community chat.",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-030",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Anyone here following the football match tonight?",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-031",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Reminder: community call moved to Thursday.",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-032",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] What is everyone using for note taking these days?",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-033",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Congrats to the maintainers on the forum milestone!",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-034",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Memes thread — post your best ones below.",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-035",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Is the meetup room still open after 9pm?",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-036",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Sharing my vacation photos from last month.",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-037",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Rust compiler 1.80 released with async improvements.",
+    "true_relevant": false,
+    "intent": "off-topic release"
+  },
+  {
+    "message_id": "sim-msg-038",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Go 1.23 is available; generics iterator support added.",
+    "true_relevant": false,
+    "intent": "off-topic release"
+  },
+  {
+    "message_id": "sim-msg-039",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] JavaScript bundler released a new tree-shaking mode.",
+    "true_relevant": false,
+    "intent": "off-topic release"
+  },
+  {
+    "message_id": "sim-msg-040",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] A C++ graphics library is now available for download.",
+    "true_relevant": false,
+    "intent": "off-topic release"
+  },
+  {
+    "message_id": "sim-msg-041",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python packaging standards are being debated again.",
+    "true_relevant": false,
+    "intent": "python without release"
+  },
+  {
+    "message_id": "sim-msg-042",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Why does Python keep winning the language survey?",
+    "true_relevant": false,
+    "intent": "python without release"
+  },
+  {
+    "message_id": "sim-msg-043",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] My Python script broke and I cannot figure out why.",
+    "true_relevant": false,
+    "intent": "python without release"
+  },
+  {
+    "message_id": "sim-msg-044",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python style guide discussion continues in the comments.",
+    "true_relevant": false,
+    "intent": "python without release"
+  },
+  {
+    "message_id": "sim-msg-045",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python task queue library 4.0 released with a stable public demo.",
+    "true_relevant": true,
+    "intent": "duplicate"
+  },
+  {
+    "message_id": "sim-msg-046",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python task queue library 4.0 released with a stable public demo.",
+    "true_relevant": true,
+    "intent": "duplicate"
+  },
+  {
+    "message_id": "sim-msg-047",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python tool will be available next month, not yet.",
+    "true_relevant": false,
+    "intent": "ambiguous future"
+  },
+  {
+    "message_id": "sim-msg-048",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] A Python thing was released, whatever that means.",
+    "true_relevant": true,
+    "intent": "ambiguous minimal"
+  },
+  {
+    "message_id": "sim-msg-049",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Pythons released from the zoo are available for adoption.",
+    "true_relevant": false,
+    "intent": "ambiguous trap"
+  },
+  {
+    "message_id": "sim-msg-050",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] PYTHON TOOLKIT released (all caps announcement).",
+    "true_relevant": true,
+    "intent": "case variation"
+  },
+  {
+    "message_id": "sim-msg-051",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] python toolkit available",
+    "true_relevant": true,
+    "intent": "minimal phrasing"
+  },
+  {
+    "message_id": "sim-msg-052",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] The python-based crawler toolkit v2 released quietly.",
+    "true_relevant": true,
+    "intent": "hyphenated topic"
+  },
+  {
+    "message_id": "sim-msg-053",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Monty Python episode remastered and available on streaming.",
+    "true_relevant": false,
+    "intent": "not the language"
+  },
+  {
+    "message_id": "sim-msg-054",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python 3.13 RC1 released for downstream testing.",
+    "true_relevant": true,
+    "intent": "version release"
+  },
+  {
+    "message_id": "sim-msg-055",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Beta access available for a Python profiling suite.",
+    "true_relevant": true,
+    "intent": "beta availability"
+  },
+  {
+    "message_id": "sim-msg-056",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] A Python GUI framework released its roadmap, not the code.",
+    "true_relevant": false,
+    "intent": "roadmap only"
+  },
+  {
+    "message_id": "sim-msg-057",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python security patch released; update your installs.",
+    "true_relevant": true,
+    "intent": "security release"
+  },
+  {
+    "message_id": "sim-msg-058",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Discounted Python course — final promotion reminder.",
+    "true_relevant": false,
+    "intent": "promo mix"
+  },
+  {
+    "message_id": "sim-msg-059",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Available now: the annual Python survey results.",
+    "true_relevant": false,
+    "intent": "survey not tool"
+  },
+  {
+    "message_id": "sim-msg-060",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] A Python web scraper framework released version 5.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-061",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Free trial available for a Python cloud IDE (marketing).",
+    "true_relevant": false,
+    "intent": "promo mix"
+  },
+  {
+    "message_id": "sim-msg-062",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python build backend released with reproducible wheels.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-063",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Community poll: which Python feature should we cover next?",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-064",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python dependency resolver 2.1 is available for testing.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-065",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Sponsored webinar on Python deployment best practices.",
+    "true_relevant": false,
+    "intent": "promo in blocklist"
+  },
+  {
+    "message_id": "sim-msg-066",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] A Python documentation generator released its 8th major version.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-067",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Off-topic: the channel banner got a redesign.",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-068",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python mocking helper available behind a paywall signup.",
+    "true_relevant": false,
+    "intent": "promo mix"
+  },
+  {
+    "message_id": "sim-msg-069",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Local Python user group announced a social evening.",
+    "true_relevant": false,
+    "intent": "chatter"
+  },
+  {
+    "message_id": "sim-msg-070",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python microservice template released under MIT license.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-071",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Reminder that advertising is not allowed in this channel.",
+    "true_relevant": false,
+    "intent": "meta mention"
+  },
+  {
+    "message_id": "sim-msg-072",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] A Python debugging talk was released as a recorded video.",
+    "true_relevant": false,
+    "intent": "content not tool"
+  },
+  {
+    "message_id": "sim-msg-073",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python memory profiler snapshots are available in the docs.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-074",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Rumor: a Python package manager rewrite may be released someday.",
+    "true_relevant": false,
+    "intent": "rumor future"
+  },
+  {
+    "message_id": "sim-msg-075",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python linting suite 3.0 released; drop-in replacement.",
+    "true_relevant": true,
+    "intent": "clean release"
+  },
+  {
+    "message_id": "sim-msg-076",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Job posting: Python developer wanted, relocation required.",
+    "true_relevant": false,
+    "intent": "job posting"
+  },
+  {
+    "message_id": "sim-msg-077",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] Python ORM benchmark suite is available on the mirror.",
+    "true_relevant": true,
+    "intent": "clean availability"
+  },
+  {
+    "message_id": "sim-msg-078",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] The word python appears here without any release or availability.",
+    "true_relevant": false,
+    "intent": "keyword only"
+  },
+  {
+    "message_id": "sim-msg-079",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] Python background task library just shipped version 6.",
+    "true_relevant": true,
+    "intent": "rule false negative"
+  },
+  {
+    "message_id": "sim-msg-080",
+    "channel": "demo_channel_gamma",
+    "text": "[SIMULATED] A fresh Python uptime monitor is out, install instructions inside.",
+    "true_relevant": true,
+    "intent": "rule false negative"
+  },
+  {
+    "message_id": "sim-msg-081",
+    "channel": "demo_channel_alpha",
+    "text": "[SIMULATED] Python retry decorator library hit its 1.0 milestone today.",
+    "true_relevant": true,
+    "intent": "rule false negative"
+  },
+  {
+    "message_id": "sim-msg-082",
+    "channel": "demo_channel_beta",
+    "text": "[SIMULATED] New Python config validator landed on the package index.",
+    "true_relevant": true,
+    "intent": "rule false negative"
+  }
+]

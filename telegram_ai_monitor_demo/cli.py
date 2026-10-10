@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Sequence
 
 from .mock_wechat import MockWeChatServer
+from .mock_llm import MockLLMServer
 from .pipeline import collect, drain
 from .store import Store
 
@@ -87,6 +88,21 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     collect_parser = sub.add_parser("collect", help="从合成 fixture 采集并筛选")
     collect_parser.add_argument("--db", required=True, type=Path)
+    collect_parser.add_argument("--llm-endpoint", default=None,
+                                help="默认用确定性规则；提供 http://127.0.0.1 mock LLM 端点则启用 LLM 筛选")
+    collect_parser.add_argument("--llm-model", default="mock-model")
+    collect_parser.add_argument("--llm-timeout", type=float, default=5.0)
+    collect_parser.add_argument("--llm-allow-remote", action="store_true")
+    collect_parser.add_argument("--llm-api-key-env", default=None,
+                                help="存放 API key 的环境变量名；本 demo 不接受任何字面量凭据")
+
+    screen_parser = sub.add_parser("screen", help="对一条文本运行 LLM 建议 + 规则回退的筛选演示")
+    screen_parser.add_argument("--text", required=True)
+    screen_parser.add_argument("--endpoint", default=None, help="默认启动进程内本地 mock LLM")
+    screen_parser.add_argument("--model", default="mock-model")
+    screen_parser.add_argument("--timeout", type=float, default=5.0)
+    screen_parser.add_argument("--allow-remote", action="store_true")
+    screen_parser.add_argument("--api-key-env", default=None)
 
     drain_parser = sub.add_parser("drain", help="使用本地模拟接口处理日报和一条告警")
     drain_parser.add_argument("--db", required=True, type=Path)
@@ -100,8 +116,28 @@ def main(argv: Sequence[str] | None = None) -> int:
     args = parser.parse_args(argv)
     if args.command == "demo":
         return _demo()
+    if args.command == "screen":
+        from .llm_filter import screen_message
+
+        if args.endpoint is None:
+            with MockLLMServer() as server:
+                result = screen_message(server.endpoint, args.model, args.text, timeout=args.timeout)
+        else:
+            result = screen_message(
+                args.endpoint, args.model, args.text, timeout=args.timeout,
+                allow_remote=args.allow_remote, api_key_env=args.api_key_env,
+            )
+        print(json.dumps(result, ensure_ascii=False, sort_keys=True))
+        return 0
     if args.command == "collect":
-        print(json.dumps(collect(args.db), ensure_ascii=False, sort_keys=True))
+        print(json.dumps(collect(
+            args.db,
+            llm_endpoint=args.llm_endpoint,
+            llm_model=args.llm_model,
+            llm_timeout=args.llm_timeout,
+            llm_allow_remote=args.llm_allow_remote,
+            llm_api_key_env=args.llm_api_key_env,
+        ), ensure_ascii=False, sort_keys=True))
         return 0
     if args.command == "drain":
         print(json.dumps(drain(args.db, args.context_file, args.endpoint, args.now), ensure_ascii=False, sort_keys=True))
