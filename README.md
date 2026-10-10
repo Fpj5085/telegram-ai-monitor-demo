@@ -72,7 +72,7 @@ python -m telegram_ai_monitor_demo status --db .demo-state/demo.sqlite3
 
 ## 个人职责与 AI 辅助
 
-我负责真实项目的需求拆解、采集与运行边界、`-2` 故障处理目标、持久熔断条件、恢复顺序、告警节奏、数据保护要求以及验收决策。原项目由 AI Coding Agent 辅助部分实现；本仓库的离线 Demo、测试和文档也是 AI 辅助搭建的，不宣称 Demo 代码全部由我独立手写。详细职责拆分与历史证据见[项目案例](docs/case-study.md)。
+我负责真实项目的需求拆解、采集与运行边界、`-2` 故障处理目标、持久熔断条件、恢复顺序、告警节奏、数据保护要求以及验收决策。原项目由 AI Coding Agent 辅助部分实现。详细职责拆分与历史证据见[项目案例](docs/case-study.md)。
 
 ## 公开 Demo 与原系统的区别
 
