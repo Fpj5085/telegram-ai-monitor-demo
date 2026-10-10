@@ -1,0 +1,46 @@
+{
+  "rule_only": {
+    "tp": 32,
+    "fp": 13,
+    "fn": 4,
+    "tn": 33,
+    "precision": 0.7111,
+    "recall": 0.8889,
+    "f1": 0.7901
+  },
+  "llm_only": {
+    "tp": 32,
+    "fp": 5,
+    "fn": 4,
+    "tn": 41,
+    "precision": 0.8649,
+    "recall": 0.8889,
+    "f1": 0.8767
+  },
+  "hybrid": {
+    "tp": 32,
+    "fp": 5,
+    "fn": 4,
+    "tn": 41,
+    "precision": 0.8649,
+    "recall": 0.8889,
+    "f1": 0.8767
+  },
+  "run_stats": {
+    "model_calls": 82,
+    "json_valid": 82,
+    "fallback_used": 0,
+    "latency_seconds": {
+      "mean": 0.0017,
+      "p95": 0.0014
+    },
+    "prompt_tokens": 1357,
+    "completion_tokens": 1879
+  },
+  "dataset": {
+    "path": "telegram_ai_monitor_demo/fixtures/eval_messages.json",
+    "rows": 82,
+    "synthetic": true,
+    "ground_truth": "constructed by scripts/generate_eval_dataset.py; not human-annotated"
+  }
+}

@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from .mock_wechat import validate_local_endpoint
+from .llm_filter import screen_message
 from .store import Store
 
 PACKAGE_DIR = Path(__file__).resolve().parent
@@ -23,7 +24,14 @@ def context_file_version(path: Path) -> str:
     return f"{stat.st_mtime_ns}:{stat.st_size}"
 
 
-def collect(db_path: Path) -> dict[str, int | bool]:
+def collect(
+    db_path: Path,
+    llm_endpoint: str | None = None,
+    llm_model: str = "mock-model",
+    llm_timeout: float = 5.0,
+    llm_allow_remote: bool = False,
+    llm_api_key_env: str | None = None,
+) -> dict[str, int | bool]:
     messages = json.loads((FIXTURES_DIR / "channel_messages.json").read_text(encoding="utf-8"))
     digest = (FIXTURES_DIR / "saved_digest.md").read_text(encoding="utf-8")
     store = Store(db_path)
@@ -32,14 +40,23 @@ def collect(db_path: Path) -> dict[str, int | bool]:
     read_count = len(messages)
     accepted = 0
     filtered = 0
+    llm_used = 0
+    llm_fallbacks = 0
     for message in messages:
         text = str(message["text"])
-        normalized = text.casefold()
-        blocked = any(term in normalized for term in ("sponsored", "promotion", "advertisement"))
-        eligible = "python" in normalized and any(
-            marker in normalized for marker in ("released", "available")
-        )
-        if blocked or not eligible:
+        if llm_endpoint is None:
+            from .rules import rule_screen
+
+            eligible = rule_screen(text)
+        else:
+            result = screen_message(
+                llm_endpoint, llm_model, text, timeout=llm_timeout,
+                allow_remote=llm_allow_remote, api_key_env=llm_api_key_env,
+            )
+            llm_used += 1
+            llm_fallbacks += int(result["fallback_used"])
+            eligible = bool(result["executed"])
+        if not eligible:
             filtered += 1
             continue
 
@@ -53,6 +70,8 @@ def collect(db_path: Path) -> dict[str, int | bool]:
         "alerts_enqueued": accepted,
         "messages_filtered": filtered,
         "digest_created": saved_digest,
+        "llm_messages_screened": llm_used,
+        "llm_fallbacks": llm_fallbacks,
     }
 
 

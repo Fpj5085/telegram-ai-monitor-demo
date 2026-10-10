@@ -223,7 +223,7 @@ class DemoTests(unittest.TestCase):
             encoding="utf-8",
             timeout=10,
         )
-        self.assertIn("PASS: 18 allowlisted files", completed.stdout)
+        self.assertIn("PASS: 26 allowlisted files", completed.stdout)
 
 
 if __name__ == "__main__":
