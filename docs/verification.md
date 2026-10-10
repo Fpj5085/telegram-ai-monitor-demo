@@ -28,8 +28,6 @@
 
 实际结果：6 项测试全部 `ok`，`Ran 6 tests in 6.738s`，`OK`，退出码 `0`。
 
-## 发布安全检查
+## 回执边界
 
-- `python scripts/check_public_tree.py`：`PASS: 18 allowlisted files; no extra files, risky patterns, or live-service imports`，退出码 `0`。
-- `git log --oneline --all`：无提交记录；`git remote -v`：无远端。没有检查到可供本次核对的提交历史，也没有执行提交、推送或公开部署。
-- GitHub Actions 已配置 Python 3.11/3.12；由于未配置远端且未推送，尚无 GitHub 托管 CI 回执。
+本文件记录的是发布前在本地执行的 Demo、测试、编译和白名单检查结果；这些结果不代替 GitHub Actions。公开仓库的远端运行状态应以仓库的 Actions 页面为准。

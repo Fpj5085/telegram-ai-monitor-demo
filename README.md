@@ -96,4 +96,4 @@ python -m telegram_ai_monitor_demo status --db .demo-state/demo.sqlite3
 
 ## 公开边界
 
-本仓库只应包含白名单列出的源码、合成 fixture、文档、测试和 CI 配置。没有公开 GitHub 仓库、远端或推送操作；发布前需人工审核这份本地交付及文件清单。
+本公开 Demo 仓库仅包含白名单列出的源码、合成 fixture、文档、测试和 CI 配置。它与原个人自动化系统分离，不包含原系统源码副本、真实运行数据或服务凭据。
